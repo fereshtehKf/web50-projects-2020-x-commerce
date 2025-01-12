@@ -1,0 +1,218 @@
+
+  /* General Styles */
+
+:root {
+  --primary-color: #2563EB;
+  --secondary-color: #10B981;
+  --accent-color: #F59E0B;
+  --background-color: #F9FAFB;
+  --card-color: #FFFFFF;
+  --text-color: #1F2937;
+  --secondary-text-color: #6B7280;
+  --error-color: #EF4444;
+  --warning-color: #FBBF24;
+}  
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F9FAFB; /* Light gray background */
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Grid Layout for Listings */
+.listings-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.listing-item {
+  background-color: white; /* White background for cards */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.listing-item img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.listing-item h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #1F2937; /* Dark gray for headings */
+}
+
+
+.listing-item p {
+  margin: 5px 0;
+  color: #6B7280; /* Medium gray for secondary text */
+}
+
+.listing-item button {
+  background-color: #10B981; /* Primary blue for buttons */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.listing-item button:hover {
+  background-color: #0e9477; /* Darker blue on hover */
+}
+
+/* Custom CSS for Active Listings */
+.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: white; /* White background for cards */
+}
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-img {
+      border-radius: 8px 0 0 8px;
+  }
+  
+  .card-body {
+      padding: 1rem; /* Reduce padding */
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #1F2937; /* Dark gray for titles */
+  }
+  
+  .card-text {
+    font-size: 0.85rem;
+    color: #6B7280; /* Medium gray for text */
+    margin-bottom: 0.5rem;
+  }
+  
+/* Button Styles */
+.btn-watched, .btn-unwatched {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.btn-watched {
+  background-color: #10B981; /* Green for watched button */
+}
+
+.btn-watched:hover {
+  background-color: #0D946E; /* Darker green on hover */
+}
+
+.btn-unwatched {
+  background-color: #6B7280; /* Medium gray for unwatched button */
+}
+
+.btn-unwatched:hover {
+  background-color: #4B5563; /* Darker gray on hover */
+}
+
+/* Blue Menu Styles */
+.blue-menu {
+  background-color: #a9ffe2; /* Primary blue for menu */
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  white-space: nowrap;
+}
+
+.blue-menu a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.blue-menu a:hover {
+  text-decoration: underline;
+}
+
+.menu-left, .menu-center, .menu-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Prevent the blue menu from changing shape on resize */
+@media (max-width: 768px) {
+  .blue-menu {
+      flex-direction: row; /* Keep items in a row */
+      overflow-x: auto; /* Add horizontal scroll if needed */
+  }
+}
+/* Custom CSS for Filter Form */
+.filter-container {
+  margin-left:17cm; /* 3.5 cm margin from the left */
+  margin-top: 20px; /* Space from the top */
+  margin-bottom: 50px;
+  
+}
+
+.filter-form {
+  display: flex;
+  flex-direction: column; /* Stack label and form vertically */
+  gap: 20px; /* Space between label and form */
+}
+
+.filter-group label {
+   /*font-weight: bold; Make the label bold */
+  margin-bottom: 10px; /* Space between label and dropdown */
+}
+
+.filter-form .d-flex {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between dropdown and button */
+}
+
+.filter-form select {
+  width: 200px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.filter-form button {
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #10B981; /* Green for filter button */
+  color: white;
+  cursor: pointer;
+}
+
+.filter-form button:hover {
+  background-color: #0D946E; /* Darker green on hover */
+}
