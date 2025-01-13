@@ -1,6 +1,4 @@
-<div align="center">
- <img style="width: 20%;" src="https://github.com/ahr9n/cs50w-commerce/blob/master/auctions/static/auctions/img/icon.png" alt="Best Place to Bid!">
-</div>
+
 
 # Commerce
 Project 2 for CS50’s Web Programming with Python and JavaScript.
