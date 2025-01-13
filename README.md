@@ -37,6 +37,4 @@ Requires Python3 and the package installer for Python (pip) to run:
 ## Topics
 Built with [`Python`](https://www.python.org/downloads/), [`Django`](https://www.djangoproject.com/), and HTML/CSS.
 
-## Future Work
-Some challenges I would make in my free-time:
-* Make nicer front-end design.
+
